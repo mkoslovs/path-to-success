@@ -1,0 +1,277 @@
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* CSS REST */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ROOT VARIABLES */
+:root {
+    /* Variable Colors */
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dk-gray: #1E1E1E;
+    --white: #ffffff;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: var(--lavender);
+}
+
+* {
+    font-family: 'Inter';
+}
+
+
+
+h1, h2 {
+    font-family: 'Kavoon';
+}
+
+h1 {
+    font-size: 3em;
+    color: var(--white);
+    padding: 25px 0 15px;
+
+}
+
+nav h3 {
+    color: var(--dk-gray);
+    font-size: 1.5em;
+    font-family: 'Inter';
+    padding: 15px 0 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--white);
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--yellow);
+    font-weight: bold;
+    padding: 5px 0 15px;
+}
+
+h4 {
+    font-size: 1.15em;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+nav {
+    background-color: var(--yellow);
+    margin: 40px 0 0;
+    padding: 0 20px 20px;
+}
+
+/* CSS BY NAME */
+header {
+    background-color: var(--purple);
+    text-align: center;
+}
+
+header p {
+    font-family: 'Inter';
+    color: var(--white);
+}
+
+
+nav a {
+    font-family: 'Inter';
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li {
+    margin-bottom: 10px;
+    padding: 15px 0;
+    background-color: var(--white);
+}
+
+#services {
+    background-color: var(--purple);
+    padding: 15px 20px;
+}
+
+.services-box {
+    background-color: var(--white);
+    margin-bottom: 15px;
+    padding: 25px 50px 25px 15px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.services-box h4 {
+    padding: 15px 0 10px;
+}
+
+.services-box p {
+    line-height: 25px;
+    color: var(--dk-gray);
+}
+
+#about {
+    background-color: var(--pink);
+    padding: 15px 20px;
+}
+
+#about h2 {
+    margin-bottom: 15px;
+}
+
+#about ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1em;
+}
+
+
+#about li {
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 12px 40px;
+    border-radius: 10px;
+}
+
+#about li:first-child {
+    background-color: var(--teal);
+}
+
+#about li:nth-child(2) {
+    background-color: var(--lavender);
+}
+
+#about li:nth-child(3) {
+    background-color: var(--yellow);
+}
+
+#about li:last-child {
+    background-color: var(--white);
+}
+
+#pricing {
+    background-color: var(--purple);
+    padding: 15px 20px;
+}
+
+#pricing h3 {
+    padding: 10px 0;
+}
+
+#pricing table {
+    margin: 0 auto;
+    border: 2px solid var(--yellow);
+}
+
+th {
+    font-weight: bold;
+    padding: 20px 15px 15px;
+    background-color: var(--yellow);
+}
+
+td {
+    padding: 15px;
+    background-color: var(--white);
+    border: 2px solid var(--yellow);
+}
+
+#first-step {
+    background-color: var(--pink);
+    padding: 15px 15px 10px 20px;
+    line-height: 25px;
+}
+
+#first-step p {
+    color: var(--white);
+    padding: 20px 0 10px;
+}
+
+#first-step .button {
+    margin: 0 15px;
+    text-decoration: none;
+    text-align: center;
+    padding: 23px 20px;
+    background-color: var(--white);
+    font-weight: bold;
+    color: var(--dk-gray);
+    border-radius: 17px;
+    box-shadow: 5px 5px 3px var(--dk-gray);
+}
+
+footer {
+    font-family: 'Inter';
+    background-color: var(--purple);
+    padding: 50px 40px;
+    color: var(--white);
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p {
+    display: inline;
+    padding: 0 20px;
+}
+
+footer a {
+    color: var(--white);
+}
+
+
+
